@@ -39,6 +39,9 @@ body {
     height: 550px;
     background-color: rgba(82, 37, 98, 0.8);
   }
+  &__white {
+    max-width: 1600px;
+  }
 }
 
 .section {
@@ -51,23 +54,11 @@ body {
   &__pink-forest {
     background: url('../img/2-bg.png') no-repeat;
   }
-  &__white {
-    background-color: #fff;
-    background: url('../img/hand.png') center left no-repeat;
-    display: grid;
-    justify-content: end;
-  }
   &__purple {
     background: url('../img/montain-bg.png') no-repeat;
   }
   &__photography {
     background: url('../img/food.png') no-repeat;
-  }
-  &__white-hand {
-    background-color: #fff;
-    background: url('../img/applewatch.png') center right no-repeat;
-    display: grid;
-    justify-content: start;
   }
 }
 /* the end all section */
@@ -89,6 +80,7 @@ body {
     font-style: italic;
     color: #efeeef;
     padding-left: 10px;
+    margin-bottom: 7px;
   }
   &__ul {
     display: flex;
@@ -257,26 +249,33 @@ body {
 // 4en Heading section 
 
 .heading {
-  color: #000;
-  padding: 95px 0 125px;
-  max-width: 653px;
-  margin-right: 210px;
-  color: #3a4d60;
-  &__title {
-    font-size: 19px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+  display: flex;
+  &__img {
+    max-width: 40%;
+    max-height: 100%;
   }
-  &__sub-title {
-    font-size: 19px;
-    font-weight: 400;
-    margin-bottom: 37px;
+  &__inner {
+    color: #000;
+    padding: 95px 0 125px;
+    max-width: 653px;
+    margin: 0 30px 0 100px;
+    color: #3a4d60;
   }
-  &__text {
-    font-size: 17px;
-    font-weight: 400;
-  }
+    &__title {
+      font-size: 19px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    &__sub-title {
+      font-size: 19px;
+      font-weight: 400;
+      margin-bottom: 37px;
+    }
+    &__text {
+      font-size: 17px;
+      font-weight: 400;
+    }
 }
 
 // 5en Rush section
@@ -362,8 +361,11 @@ body {
 
 // 7en Heading section
 
-.secont--heading {
-  margin: 0 0 0 210px;
+.heading--second {
+  justify-content: space-between;
+}
+.heading__inner--second {
+	margin: 0 30px 0 13%;
 }
 
 // 8en Footer
