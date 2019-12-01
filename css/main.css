@@ -31,6 +31,8 @@ body {
     max-width: 1600px;
     height: 550px;
     background-color: rgba(82, 37, 98, 0.8); }
+  .container__white {
+    max-width: 1600px; }
 
 .section {
   width: 100%;
@@ -40,20 +42,10 @@ body {
     background-color: #2e3b4e; }
   .section__pink-forest {
     background: url("../img/2-bg.png") no-repeat; }
-  .section__white {
-    background-color: #fff;
-    background: url("../img/hand.png") center left no-repeat;
-    display: grid;
-    justify-content: end; }
   .section__purple {
     background: url("../img/montain-bg.png") no-repeat; }
   .section__photography {
     background: url("../img/food.png") no-repeat; }
-  .section__white-hand {
-    background-color: #fff;
-    background: url("../img/applewatch.png") center right no-repeat;
-    display: grid;
-    justify-content: start; }
 
 /* the end all section */
 .nav {
@@ -70,7 +62,8 @@ body {
     font-size: 12px;
     font-style: italic;
     color: #efeeef;
-    padding-left: 10px; }
+    padding-left: 10px;
+    margin-bottom: 7px; }
   .nav__ul {
     display: flex;
     justify-content: flex-end;
@@ -204,11 +197,16 @@ body {
     color: #fff; }
 
 .heading {
-  color: #000;
-  padding: 95px 0 125px;
-  max-width: 653px;
-  margin-right: 210px;
-  color: #3a4d60; }
+  display: flex; }
+  .heading__img {
+    max-width: 40%;
+    max-height: 100%; }
+  .heading__inner {
+    color: #000;
+    padding: 95px 0 125px;
+    max-width: 653px;
+    margin: 0 30px 0 100px;
+    color: #3a4d60; }
   .heading__title {
     font-size: 19px;
     font-weight: 700;
@@ -286,8 +284,11 @@ body {
       font-weight: 600;
       letter-spacing: 1px; }
 
-.secont--heading {
-  margin: 0 0 0 210px; }
+.heading--second {
+  justify-content: space-between; }
+
+.heading__inner--second {
+  margin: 0 30px 0 13%; }
 
 .footer {
   width: 100%;
