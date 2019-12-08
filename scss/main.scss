@@ -95,7 +95,7 @@ body {
     text-decoration: none;
     color: #fff;
   }
-  &__link:hover {
+  &__link:hover, .active {
     border-bottom: 3px solid #fff;
     padding-bottom: 40px;
     transition: .1s;

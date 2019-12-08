@@ -90,7 +90,7 @@ body {
     margin-right: 50px;
     text-decoration: none;
     color: #fff; }
-  .nav__link:hover {
+  .nav__link:hover, .nav .active {
     border-bottom: 3px solid #fff;
     padding-bottom: 40px;
     -webkit-transition: .1s;
