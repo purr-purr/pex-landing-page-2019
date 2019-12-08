@@ -95,13 +95,12 @@ body {
     text-decoration: none;
     color: #fff;
   }
-  &__link:hover {
+  &__link:hover, .active {
     border-bottom: 3px solid #fff;
     padding-bottom: 40px;
     transition: .1s;
   }
 }
-
 
 #check-menu {
   display: none;
@@ -485,12 +484,10 @@ body {
     top: 15px;
   }
 
-
   /*Nav*/
 	.nav__main-menu:hover .nav__link {
 		filter: blur(0px);
 	}
-
 	.nav__main-menu:hover .nav__link:hover {
 		filter: blur(0px);
 		border-bottom: 0;
@@ -506,11 +503,9 @@ body {
 		text-align: center;
 		height: 40px;
 	}
-
 	#check-menu {
 		display: none;
 	}
-
 	.burger__label {
 		display: block;
 		position: absolute;
@@ -522,8 +517,7 @@ body {
 		z-index: 2;
 		line-height: 40px;
 	}
-
-	.burger-line {
+	.burger__line {
 		position: absolute;
 		top: 8px;
 		right: 10px;
@@ -532,15 +526,12 @@ body {
 		background-color: #fff;
 		transition: .5s all;
 	}
-
 	.second, .third {
 		top: 18px;
 	}
-
 	.fourth {
 		top: 28px;
 	}
-
 	.nav__main-menu {
     display: block;
     position: absolute;
@@ -556,38 +547,31 @@ body {
     backdrop-filter: blur(2px);
     border-radius: 14px;
 	}
-
 	.nav__link {
     display: block;
     margin: 23px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    &:hover {
+      color: #b87ce1;
+      padding-bottom: 0px;
+      transition: .5s;
+    }
 	}
-
-  .nav__link:hover {
-		color: #b87ce1;
-    padding-bottom: 0px;
-    transition: .5s;
-  }
-
 	#check-menu:checked ~ .nav__main-menu {
 		max-height: 500px;
 		font-size: 15px;
 	}
-
 	#check-menu:checked ~ .first {
 		display: none;
 	}
-
 	#check-menu:checked ~ .second {
 		transform: rotate(45deg);
 	}
-
 	#check-menu:checked ~ .third {
 		transform: rotate(-45deg);
 	}
-
 	#check-menu:checked ~ .fourth {
 		display: none;
 	}
@@ -598,7 +582,7 @@ body {
 @media screen and (max-width: 840px) {
   .offer {
     justify-content: center;
-        padding-bottom: 75px;
+    padding-bottom: 75px;
   }
   .intro {
     margin-left: 135px;
@@ -623,5 +607,27 @@ body {
   }
   .photography {
     padding: 233px 0 73px;
+  }
+}
+
+/* 270px - 400px */
+@media screen and (max-width: 400px) {
+  .nav__main-menu {
+    right: -30px;
+  }
+  .heading {
+    max-height: 900px;
+  }
+  .started__button {
+    padding: 22px 27px;
+  }
+  .intro__button {
+    padding: 20px 25px;
+  }
+  .rush {
+    padding: 15px 0 15px;
+    &__button {
+      padding: 20px 27px;
+    }
   }
 }
